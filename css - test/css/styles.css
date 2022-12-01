@@ -1,0 +1,99 @@
+.main-div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+}
+
+.sub-box {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  width: 96%;
+  height: 96%;
+  border: 1px solid black;
+  display: flex;
+}
+
+/* this keyframe will have the text start at the center move down, all the way up then back to the center */
+@keyframes eratictext {
+  0%,
+  100% {
+    transform: translateY(0);
+    color: black;
+  }
+  50% {
+    transform: translateY(-40vh);
+    color: white;
+  }
+  75% {
+    transform: translateY(40vh);
+    color: white;
+  }
+  65% {
+    color: black;
+  }
+}
+.content-box-eratic-bg {
+  background: blue;
+}
+
+.eratictext {
+  animation: rotate 2s ease-in-out infinite reverse;
+  animation-name: eratictext;
+}
+
+/* This will rotate text 360 degrees indefintley */
+@keyframes rotatetext {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.rotatetext {
+  animation: rotate 2s ease-out infinite;
+  animation-name: rotatetext;
+}
+
+/* This code does two things it transitions the background from blue to yellow, and the text
+as well from white to black */
+@keyframes bluetoyellow {
+  0%,
+  100% {
+    background-color: blue;
+    color: white;
+  }
+  50% {
+    background-color: yellow;
+    color: black;
+  }
+}
+.bluetoyellow {
+  animation-name: bluetoyellow;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-delay: 0ms;
+  animation-direction: reverse;
+}
+
+.content-box {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-bold {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 54px;
+}
