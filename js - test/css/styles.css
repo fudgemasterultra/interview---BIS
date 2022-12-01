@@ -1,0 +1,23 @@
+.text-center {
+  text-align: center;
+}
+.text-bold-head {
+  font-weight: bold;
+  font-size: 54px;
+}
+
+.text-bold-subhead {
+  font-weight: bold;
+  font-size: 40px;
+}
+.text-bold-p {
+  font-weight: bold;
+  font-size: 24px;
+}
+.align-center {
+  text-align: center;
+}
+.big-btn {
+  height: 50px;
+  width: 200px;
+}
