@@ -2,7 +2,6 @@
   let timer = null;
   let number = 0;
   document.getElementById("playBtn").addEventListener("click", function () {
-    setTimeout(() => {}, 3000);
     if (timer === null) {
       timer = setInterval(function () {
         number = Math.round(Math.random() * 10000);
